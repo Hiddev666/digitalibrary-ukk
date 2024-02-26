@@ -37,7 +37,7 @@
             <div class="carousel-inner">
                 <?php foreach ($carousels as $carousel) : ?>
                     <div class="carousel-item active w-100" data-bs-interval="3000">
-                        <img src="http://<?= $carousel["image"]?>" class="d-block w-100 img-fluid" alt="...">
+                        <img src="<?= $carousel["image"]?>" class="d-block w-100 img-fluid" alt="...">
                     </div>
                 <?php endforeach ?>
             </div>
