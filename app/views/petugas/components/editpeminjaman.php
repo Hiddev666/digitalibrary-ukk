@@ -2,7 +2,7 @@
     <div class="container card p-4">
 
         <h3>Ubah Peminjaman</h3>
-        <form method="POST" action="<?= BASEURL?>/admin/updatepeminjaman">
+        <form method="POST" action="<?= BASEURL?>/petugas/updatepeminjaman">
         <div class="row">
                 <div class="col">
                     <label for="username" class="form-label">Username Peminjam</label>
@@ -27,7 +27,7 @@
                 <button type="submit" class="btn btn-primary" name="currentid" value="<?= $id?>">Ubah</button>
             </div>
         </form>
-        <a href="<?= BASEURL?>/admin/peminjaman" class="mt-2">
+        <a href="<?= BASEURL?>/petugas/peminjaman" class="mt-2">
             <button class="btn btn-warning">Cancel</button>
         </a>
     </div>

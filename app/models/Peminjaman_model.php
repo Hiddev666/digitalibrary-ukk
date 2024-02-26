@@ -43,6 +43,15 @@ class Peminjaman_model
         return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function getByIdEdit($id)
+    {
+        $this->stmt = $this->dbh->prepare("SELECT * FROM peminjaman inner join user on peminjaman.id_user = user.id inner join buku on peminjaman.id_buku = buku.id WHERE peminjaman.id=:id");
+        $this->stmt->execute([
+            "id" => $id
+        ]);
+        return $this->stmt->fetch();
+    }
+
     public function getDipinjam($id) {
         $this->stmt = $this->dbh->prepare("SELECT COUNT(buku.id) as jumlah, peminjaman.id, user.id as userid, buku.id as bukuid, buku.image, user.nama_lengkap, buku.judul, peminjaman.tgl_peminjaman, peminjaman.tgl_pengembalian, peminjaman.status_peminjaman FROM buku INNER JOIN peminjaman on buku.id = peminjaman.id_buku INNER JOIN user ON user.id = peminjaman.id_user WHERE user.id=:id AND peminjaman.status_peminjaman='Dipinjam' GROUP BY buku.id ORDER BY peminjaman.id DESC;");
         $this->stmt->execute([

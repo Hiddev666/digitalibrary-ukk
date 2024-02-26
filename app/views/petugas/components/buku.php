@@ -1,53 +1,15 @@
-<?php session_start(); ?>
+<div class="container p-3 ps-4">
+    <div class="container card p-4">
 
-<!doctype html>
-<html lang="en">
+        <h3>Buku</h3>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?= $title?></title>
-    <link href="<?= BASEURL?>/css/bootstrap.min.css" rel="stylesheet">
-</head>
+        <div class="d-flex gap-2">
+            <form action="" class="d-flex gap-1 mt-3 w-100" method="POST">
+                <input type="text" class="form-control" placeholder="Cari Judul Buku" name="keyword">
+                <button type="submit" class="btn btn-warning" name="startsearch">Cari</button>
+            </form>
 
-<body>
-
-    <!-- Navbar -->
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid p-2">
-            <a href="<?= BASEURL ?>/user" class="link-offset-2 link-underline link-underline-opacity-0 text-dark">
-                <div class="ms-4 d-flex align-items-center">
-                    <img src="<?= BASEURL ?>/img/book.svg" alt="" width="40px">
-                    <h5 class="m-0 ms-2">DigitaLibrary</h5>
-                </div>
-            </a>
-            <div class="d-flex gap-3  me-4">
-                <a href="<?= BASEURL ?>/user/dipinjam">
-                    <img src="<?= BASEURL ?>/img/book-saved-svgrepo-com.svg" alt="" style="width: 35px;">
-                </a>
-                <a href="<?= BASEURL ?>/user/koleksi">
-                    <img src="<?= BASEURL ?>/img/collection-tag-svgrepo-com.svg" alt="" style="width: 35px;">
-                </a>
-                <div class="btn-group ms-3 d-flex align-items-center">
-                    <a type="button" class="dropdown-toggle link-offset-2 link-underline link-underline-opacity-0 text-dark" data-bs-toggle="dropdown" aria-expanded="false">
-                        @<?= $_SESSION['username'] ?>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a href="<?= BASEURL ?>/auth/logout" class="dropdown-item" type="button">Sign Out</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar -->
-
-    <div class="container d-flex gap-2 mt-4">
-        <form class="d-flex w-100" role="search" method="POST" action="<?= BASEURL ?>/user/search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="keyword">
-            <button class="btn btn-warning" type="submit">Search</button>
-        </form>
-
-        <div class="dropdown">
+            <div class="dropdown mt-3">
                 <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Filter
                 </button>
@@ -99,11 +61,43 @@
                     </form>
                 </ul>
             </div>
+
+        </div>
+
+        <script src="<?= BASEURL ?>/js/filterpopup.js"></script>
+
+        <table class="table table-striped mt-2">
+            <thead>
+                <tr>
+                    <th scope="col">Kode</th>
+                    <th scope="col">Cover</th>
+                    <th scope="col">Judul</th>
+                    <th scope="col">Penulis</th>
+                    <th scope="col">Penerbit</th>
+                    <th scope="col" class="text-center">Tahun Terbit</th>
+                    <th scope="col" class="text-center">Stock</th>
+                    <th scope="col">Kategori</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                foreach ($books as $book) {
+                ?>
+                    <tr>
+                        <th scope="book"><?= $book['id'] ?></th>
+                        <td>
+                            <img src="<?= $book['image'] ?>" alt="" style="width: 100px;" class="rounded">
+
+                        </td>
+                        <td><?= $book['judul'] ?></td>
+                        <td><?= $book['penulis'] ?></td>
+                        <td><?= $book['penerbit'] ?></td>
+                        <td class="text-center"><?= $book['tahun_terbit'] ?></td>
+                        <td class="text-center"><?= $book['stock'] ?></td>
+                        <td><?= $book['nama_kategori'] ?></td>                    
+                    </tr>
+                <?php } ?>
+            </tbody>
+        </table>
     </div>
-
-    <?php include "components/$action.php" ?>
-
-    <script src="<?= BASEURL?>/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+</div>

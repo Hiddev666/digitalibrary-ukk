@@ -133,6 +133,6 @@ class Auth extends Controller
     {
         session_start();
         session_destroy();
-        header("Location: " . BASEURL . "/auth/login");
+        header("Location: " . BASEURL . "/main");
     }
 }

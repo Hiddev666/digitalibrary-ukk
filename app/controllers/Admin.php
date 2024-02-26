@@ -291,10 +291,10 @@ class Admin extends Controller
 
     public function editpeminjaman($id)
     {
-        $peminjaman = $this->getModel("Peminjaman_model")->getById($id);
-        $user = $this->getModel("User_model")->getById($peminjaman["userid"]);
+        $peminjaman = $this->getModel("Peminjaman_model")->getByIdEdit($id);
+        $user = $this->getModel("User_model")->getById($peminjaman["id_user"]);
 
-        $this->render("admin/index", [
+         $this->render("admin/index", [
             "id" => $id,
             "username" => $user["username"],
             "peminjaman" => $peminjaman,
@@ -383,7 +383,7 @@ class Admin extends Controller
 
     public function laporanpeminjaman($id)
     {
-        $peminjaman = $this->getModel("Peminjaman_model")->getById($id);
+        $peminjaman = $this->getModel("Peminjaman_model")->getByIdEdit($id);
 
         $pdf = new FPDF();
 

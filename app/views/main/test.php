@@ -12,14 +12,14 @@
 
 <body>
 
-    <div class="container d-flex align-items-center justify-content-between p-4">
+    <div class="container d-flex align-items-center justify-content-between pt-4 mt-3">
         <div class="d-flex align-items-center justify-content-between" style="width: 18%;">
             <p>Collections</p>
             <p>Favorites</p>
         </div>
-        <h4>Logo</h4>
+        <img src="<?= BASEURL ?>/img/digitaLibrary.svg" alt="">
         <div class="d-flex align-items-center justify-content-between">
-            <div style="width: 40px; height: 40px; border-radius: 100%;" class="bg-danger">
+            <div style="width: 40px; height: 40px; border-radius: 100%;" class="bg-success">
 
             </div>
             <div class="btn-group ms-3 d-flex align-items-center">
@@ -29,6 +29,330 @@
                 <ul class="dropdown-menu dropdown-menu-end">
                     <li><a href="<?= BASEURL ?>/auth/logout" class="dropdown-item" type="button">Sign Out</a></li>
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center mt-5">
+        <form class="d-flex w-50" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success d-flex justify-content-center align-items-center" type="submit">
+                <img src="<?= BASEURL ?>/img/search.svg">
+            </button>
+        </form>
+    </div>
+
+    <div class="container  mt-5">
+        <h6>Most Populars</h6>
+        <div class="container d-flex w-100 justify-content-center mt-4">
+            <div class="row justify-content-center gap-5">
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 140px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h4 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h4>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 140px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h4 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h4>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 140px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h4 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h4>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h6>All Books</h6>
+        <div class="container d-flex w-100 justify-content-center mt-4">
+            <div class="row justify-content-center gap-1">
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row justify-content-center gap-1">
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row justify-content-center gap-1">
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row justify-content-center gap-1">
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
+                <div class="col mb-5 d-flex align-items-center gap-3">
+                    <img src="<?= BASEURL ?>/img/uploaded/bumi-manusia-edit.jpg" style="width: 100px; box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 13px 0px 0px rgba(0,0,0,0.1);">
+                    <div class="d-flex flex-column">
+                        <h5 class="m-0 text-truncate" style="max-width: 130px;">Catatahhhhhhggggggggggggggggggggggggggggggggn Juang</h5>
+                        <p class="m-0">by Fiersa Besari</p>
+                        <div class="d-flex gap-2 mt-1">
+                            <img src="<?= BASEURL ?>/img/star-svgrepo-com.svg" style="width: 23px;">
+                            <p class="m-0">4,5</p>
+                        </div>
+                        <a href="" class="btn btn-success btn-sm mt-4">Pinjam</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
