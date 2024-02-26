@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="mt-3">
-                <button type="submit" class="btn btn-primary" name="currentid" value="<?= $user['id'] ?>">Tambah</button>
+                <button type="submit" class="btn btn-primary" name="currentid" value="<?= $user['id'] ?>">Ubah</button>
             </div>
         </form>
         <a href="<?= BASEURL?>/admin/user" class="mt-2">
