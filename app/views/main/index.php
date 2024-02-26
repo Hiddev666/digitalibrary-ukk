@@ -75,7 +75,7 @@
                         ?>
                         <a href="<?= BASEURL ?>/auth/login" class="link-offset-2 link-underline link-underline-opacity-0 text-dark">
                             <div class="card h-100" style="width: 16rem;">
-                                <img src="http://<?= $book['image'] ?>" class="card-img-top object-fit-cover" alt="..." style="width: 100%; height: 300px;">
+                                <img src="<?= $book['image'] ?>" class="card-img-top object-fit-cover" alt="..." style="width: 100%; height: 300px;">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <div class="d-flex justify-content-between align-items-start">
                                         <div class="">
